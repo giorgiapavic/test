@@ -1,5 +1,5 @@
 # Indice
-•[Introduzione](#introduzione)
+- •[Introduzione](#introduzione)
 • [Come usare l'applicazione](#come-usare-l'applicazione)
 • [Rotte](#rotte)
       •[localhost:80/citiesWeather](#citiesWeather)
