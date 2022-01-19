@@ -15,7 +15,9 @@ Per utilizzare questa applicazione si deve procedere clonando questa repository 
 
 ## Rotte
 | Metodo | Rotta | Descrizione |
+|:--------------|:-------------:|--------------:|
 | POST | /citiesWeather | Ottiene la previsione attuale di tutte le città scelte|
+|:--------------|:-------------:|--------------:|
 | POST | /citiesForecast | Ottiene la previsione futura delle città scelte con la possibilità di integrare filtri e statistiche |
 |:--------------|:-------------:|--------------:|
 ```json
