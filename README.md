@@ -50,5 +50,156 @@ Per le previsioni correnti si ottiene il seguente JSON:
         }
     ]
 }
+```
+### localhost:80/citiesForecast
+L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un oggetto JSON di questo tipo:
+```json
+{
+    "cities" :["Rome,IT" , "Berlin,DE"] ,
+    "days" : 2 ,
+    "interval" : "13:00->18:00" ,
+    "stats" : true
+}
+```
+Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
+```json
+{
+    "cities": [
+        {
+            "city": "Rome",
+            "stats": [
+                {
+                    "min": {
+                        "cloud": 0.0,
+                        "temperature": 10.99,
+                        "humidity": 60.0,
+                        "pressure": 1019.0
+                    },
+                    "max": {
+                        "cloud": 94.0,
+                        "temperature": 11.81,
+                        "humidity": 73.0,
+                        "pressure": 1031.0
+                    },
+                    "var": {
+                        "cloud": 1798.1875,
+                        "temperature": 0.08736875000000008,
+                        "humidity": 27.5,
+                        "pressure": 26.0
+                    },
+                    "medie": {
+                        "cloud": 41.75,
+                        "temperature": 11.3575,
+                        "humidity": 67.0,
+                        "pressure": 1025.0
+                    }
+                }
+            ],
+            "list": [
+                {
+                    "date": "Wed Jan 19 13:00:00 CET 2022",
+                    "cloud": 0.0,
+                    "visibility": 10000.0,
+                    "temperature": 10.99,
+                    "humidity": 60.0,
+                    "pressure": 1031.0
+                },
+                {
+                    "date": "Wed Jan 19 16:00:00 CET 2022",
+                    "cloud": 0.0,
+                    "visibility": 10000.0,
+                    "temperature": 11.37,
+                    "humidity": 64.0,
+                    "pressure": 1029.0
+                },
+                {
+                    "date": "Thu Jan 20 13:00:00 CET 2022",
+                    "cloud": 94.0,
+                    "visibility": 10000.0,
+                    "temperature": 11.81,
+                    "humidity": 71.0,
+                    "pressure": 1021.0
+                },
+                {
+                    "date": "Thu Jan 20 16:00:00 CET 2022",
+                    "cloud": 73.0,
+                    "visibility": 10000.0,
+                    "temperature": 11.26,
+                    "humidity": 73.0,
+                    "pressure": 1019.0
+                }
+            ]
+        },
+        {
+            "city": "Berlin",
+            "stats": [
+                {
+                    "min": {
+                        "cloud": 43.0,
+                        "temperature": 0.49,
+                        "humidity": 54.0,
+                        "pressure": 1015.0
+                    },
+                    "max": {
+                        "cloud": 80.0,
+                        "temperature": 4.71,
+                        "humidity": 79.0,
+                        "pressure": 1020.0
+                    },
+                    "var": {
+                        "cloud": 213.5,
+                        "temperature": 3.4802187499999997,
+                        "humidity": 144.25,
+                        "pressure": 3.6875
+                    },
+                    "medie": {
+                        "cloud": 64.0,
+                        "temperature": 2.8125,
+                        "humidity": 66.5,
+                        "pressure": 1017.25
+                    }
+                }
+            ],
+            "list": [
+                {
+                    "date": "Wed Jan 19 13:00:00 CET 2022",
+                    "cloud": 58.0,
+                    "visibility": 10000.0,
+                    "temperature": 4.71,
+                    "humidity": 79.0,
+                    "pressure": 1020.0
+                },
+                {
+                    "date": "Wed Jan 19 16:00:00 CET 2022",
+                    "cloud": 80.0,
+                    "visibility": 10000.0,
+                    "temperature": 4.58,
+                    "humidity": 78.0,
+                    "pressure": 1018.0
+                },
+                {
+                    "date": "Thu Jan 20 13:00:00 CET 2022",
+                    "cloud": 43.0,
+                    "visibility": 10000.0,
+                    "temperature": 1.47,
+                    "humidity": 55.0,
+                    "pressure": 1015.0
+                },
+                {
+                    "date": "Thu Jan 20 16:00:00 CET 2022",
+                    "cloud": 75.0,
+                    "visibility": 10000.0,
+                    "temperature": 0.49,
+                    "humidity": 54.0,
+                    "pressure": 1016.0
+                }
+            ]
+        }
+    ]
+}
+```
+```“days”``` è un filtro che può essere inserito per selenzionare di quanti giorni futuri avere il forecast
+```“interval”``` è un filtro che può essere inserito per selezionare una fascia oraria (con previsioni ogni 3 ore)
+```“stats”``` può essere inserito se si voglioni visualizzare le statistiche di minimi,massimi,media,varianza delle varie misurazioni
 
 
