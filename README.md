@@ -204,4 +204,11 @@ Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
 
 - ```“stats”``` può essere inserito se si voglioni visualizzare le statistiche di minimi,massimi,media,varianza delle varie misurazioni
 
+## Strumenti utilizzati
+- L'IDE di [Eclipse](https://www.eclipse.org/downloads/) per lo sviluppo di tutto l'applicativo scritto in java;
+- Il framework [Spring Boot](https://spring.io/projects/spring-boot);
+- [Maven](https://maven.apache.org/) per la gestione delle dipendenze  di Spring;
+- L'applicativo [Postman](https://www.postman.com/) per richiamare e testare le API esposte dal nostro servizio;
+- I sistemi [Git](https://git-scm.com/) e [GitHub](https://github.com/) per il versioning del codice;
+- [Javadoc]() per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java.
 
