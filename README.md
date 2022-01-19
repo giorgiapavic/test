@@ -22,6 +22,7 @@ Il programma è in grado di definire le seguenti rotte
 | POST | /citiesForecast | Ottiene la previsione futura delle città scelte con la possibilità di integrare filtri e statistiche |
 
 ### localhost:80/citiesWeather
+Questa rotta restituisce un JSONArray contenete i JSONObject che riportano le infomazioni di previsione attuale (la data, la temperatura, la pressione, l'umidità, la visibilità e la nuvolosità)
 L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un oggetto JSON di questo tipo:
 ```json
 {
@@ -32,7 +33,7 @@ NOTA:
 1. Nell'esempio sono state scelte due città ma è possibile selezionarne a piacimento
 2. Quando si sceglie una città è necessario inserire la sigla del Paese corrispondente
 
-Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrano forniti all'utente le previsioni correnti tramite il seguente JSON:
+Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrà fornito all'utente il seguente JSON:
 ```json
 {
     "Rome,IT": [
@@ -58,6 +59,7 @@ Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrano for
 }
 ```
 ### localhost:80/citiesForecast
+Questa rotta restituisce un JSONArray contenete i JSONObject che riportano le infomazioni di previsione futura con possibilità di inserire filtri e statistiche.
 L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un oggetto JSON di questo tipo:
 ```json
 {
@@ -67,7 +69,7 @@ L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un o
     "stats" : true
 }
 ```
-Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrano fornite all'utente le previsioni future, con filtri e statistiche tramite il seguente JSON: 
+Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrà fornito all'utente il seguente JSON: 
 ```json
 {
     "cities": [
