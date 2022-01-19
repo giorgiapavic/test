@@ -210,7 +210,7 @@ Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
 - [Maven](https://maven.apache.org/) per la gestione delle dipendenze  di Spring;
 - L'applicativo [Postman](https://www.postman.com/) per richiamare e testare le API esposte dal nostro servizio;
 - I sistemi [Git](https://git-scm.com/) e [GitHub](https://github.com/) per il versioning del codice;
-- [Javadoc]() per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java.
+- [Javadoc](file:///C:/Users/Giorgia%20Pavic/Desktop/Universit%C3%A0/Programmazione%20ad%20oggetti/PavicSasuProgettoJava/doc/index.html) per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java.
 
 ## Autori
 | Autore | Contributo |
