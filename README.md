@@ -198,8 +198,10 @@ Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
     ]
 }
 ```
-```“days”``` è un filtro che può essere inserito per selenzionare di quanti giorni futuri avere il forecast
-```“interval”``` è un filtro che può essere inserito per selezionare una fascia oraria (con previsioni ogni 3 ore)
-```“stats”``` può essere inserito se si voglioni visualizzare le statistiche di minimi,massimi,media,varianza delle varie misurazioni
+- ```“days”``` è un filtro che può essere inserito per selenzionare di quanti giorni futuri avere il forecast
+
+- ```“interval”``` è un filtro che può essere inserito per selezionare una fascia oraria (con previsioni ogni 3 ore)
+
+- ```“stats”``` può essere inserito se si voglioni visualizzare le statistiche di minimi,massimi,media,varianza delle varie misurazioni
 
 
