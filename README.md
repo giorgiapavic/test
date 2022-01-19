@@ -1,6 +1,6 @@
 ## Indice
 - [Introduzione](#introduzione)
-- [Come usare l'applicazione](#come-usare-l'applicazione)
+- [Come usare l'applicazione](#come-usare-l'-applicazione)
 - [Rotte](#rotte)
    - [localhost:80/citiesWeather](#citiesWeather)
    - [localhost:80/citiesForecast](#citiesForecast)
