@@ -19,13 +19,12 @@ Per utilizzare questa applicazione si deve procedere clonando questa repository 
 | POST | /citiesWeather | Ottiene la previsione attuale di tutte le città scelte|
 | POST | /citiesForecast | Ottiene la previsione futura delle città scelte con la possibilità di integrare filtri e statistiche |
 
+### localhost:80/citiesWeather
+L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un oggetto JSON di questo tipo:
 ```json
 {
     "cities" : ["Rome,IT" , "Berlin,DE"] ,
-    "days" : 2 ,   
-    "interval" : "10:00->16:00" ,
-    "stats" : true
+    
 }
 ```
-| Metodo | Rotta | Descrizione |
-|:--------------|:-------------:|--------------:|
+
