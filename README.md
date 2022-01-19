@@ -12,6 +12,10 @@ Questo progetto si pone l'obiettivo di creare una applicazione Java che, tramite
 
 ## Come usare l'applicazione
 Per utilizzare questa applicazione si deve procedere clonando questa repository sul pc e importando nell’IDE Eclipse il progetto PavicSasuProgettoJava. Una volta aperto Eclipse, per avviare il programma, basta selezionare PavicSasuProgettoJava nel proprio package explorer e dare il comando Run as -> Spring Boot App (all’avvio comparirà il logo di Spring). L’applicativo permetterà di visualizzare le varie informazioni metereologiche collegandosi alle rotte (elencate successivamente) sulla rete interna all’indirizzo localhost, sulla porta 80.
+
+## Rotte
+| Metodo | Rotta | Descrizione |
+|:--------------|:-------------:|--------------:|
 ```json
 {
     "cities" : ["Rome,IT" , "Berlin,DE"] ,
@@ -20,5 +24,5 @@ Per utilizzare questa applicazione si deve procedere clonando questa repository 
     "stats" : true
 }
 ```
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
+| Metodo | Rotta | Descrizione |
 |:--------------|:-------------:|--------------:|
