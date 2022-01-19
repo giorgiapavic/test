@@ -2,8 +2,8 @@
 - [Introduzione](#introduzione)
 - [Come usare l'applicazione](#come-usare-l'applicazione)
 - [Rotte](#rotte)
-+ - [localhost:80/citiesWeather](#citiesWeather)
-+ - [localhost:80/citiesForecast](#citiesForecast)
++  [localhost:80/citiesWeather](#citiesWeather)
++  [localhost:80/citiesForecast](#citiesForecast)
 - [Strumenti utilizzati](#strumenti-utilizzati)
 - [Autori](#autori)
 
