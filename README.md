@@ -14,6 +14,7 @@ Questo progetto si pone l'obiettivo di creare una applicazione Java che, tramite
 Per utilizzare questa applicazione si deve procedere clonando questa repository sul pc e importando nell’IDE Eclipse il progetto PavicSasuProgettoJava. Una volta aperto Eclipse, per avviare il programma, basta selezionare PavicSasuProgettoJava nel proprio package explorer e dare il comando Run as -> Spring Boot App (all’avvio comparirà il logo di Spring). L’applicativo permetterà di visualizzare le varie informazioni metereologiche collegandosi alle rotte (elencate successivamente) sulla rete interna all’indirizzo localhost, sulla porta 80.
 
 ## Rotte
+Il programma è in grado di definire le seguenti rotte
 | Metodo | Rotta | Descrizione |
 |:--------------|:-------------:|:--------------|
 | POST | /citiesWeather | Ottiene la previsione attuale di tutte le città scelte|
@@ -26,7 +27,11 @@ L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un o
     "cities" : ["Rome,IT" , "Berlin,DE"]
 }
 ```
-Per le previsioni correnti si ottiene il seguente JSON:
+NOTA:
+1. Nell'esempio sono state scelte due città ma è possibile selezionarne a piacimento
+2. Quando si sceglie una città è necessario inserire la sigla del Paese corrispondente
+
+Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrano forniti all'utente le previsioni correnti tramite il seguente JSON:
 ```json
 {
     "Rome,IT": [
@@ -61,7 +66,7 @@ L’API deve essere richiamata con il metodo HTTP POST e il body deve avere un o
     "stats" : true
 }
 ```
-Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
+Cliccando su "SEND" in alto a destra, il programma verrà lanciato e verrano fornite all'utente le previsioni future, con filtri e statistiche tramite il seguente JSON: 
 ```json
 {
     "cities": [
@@ -198,6 +203,7 @@ Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
     ]
 }
 ```
+NOTA:
 - ```“days”``` è un filtro che può essere inserito per selenzionare di quanti giorni futuri avere il forecast
 
 - ```“interval”``` è un filtro che può essere inserito per selezionare una fascia oraria (con previsioni ogni 3 ore)
@@ -210,7 +216,7 @@ Per le previsioni future con filtri e statistiche si ottiene il seguente JSON:
 - [Maven](https://maven.apache.org/) per la gestione delle dipendenze  di Spring;
 - L'applicativo [Postman](https://www.postman.com/) per richiamare e testare le API esposte dal nostro servizio;
 - I sistemi [Git](https://git-scm.com/) e [GitHub](https://github.com/) per il versioning del codice;
-- [Javadoc](file:///C:/Users/Giorgia%20Pavic/Desktop/Universit%C3%A0/Programmazione%20ad%20oggetti/PavicSasuProgettoJava/doc/index.html) per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java.
+- [Javadoc]() per la generazione automatica della documentazione del codice sorgente scritto in linguaggio Java.
 
 ## Autori
 | Autore | Contributo |
